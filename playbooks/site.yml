@@ -1,0 +1,11 @@
+---
+- name: Global Infrastructure Base
+  hosts: all
+  roles:
+  - { role: base }
+
+- name: Stage Cloud Caller Group
+  hosts: caller-cloud-stage
+  roles:
+  - { role: callfire-caller-cloud }
+
